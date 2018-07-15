@@ -16,7 +16,7 @@ $check = " SELECT * FROM tasks WHERE username='$username' AND password='$passwor
 $check1 = mysqli_query($db,$check);
 $num = mysqli_num_rows($check1);
 
-if ($num >= 0) {
+if ($num > 0) {
 	// login the person to his account
 }
 else
